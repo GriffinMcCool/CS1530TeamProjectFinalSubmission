@@ -22,7 +22,7 @@ public class codingGame{
                     System.out.println("Login selected");
                     break;
                 case "E":
-                    System.out.println("Exit account selected");
+                    System.out.println("Exit app selected");
                     continueLoop = false;
                     break;
                 default:
@@ -42,7 +42,7 @@ public class codingGame{
         while (continueLoop){
             System.out.print("Enter username: ");
             username = scanner.nextLine();
-            System.out.println("Entered: " + username + ". Is this correct (Y/N)? ");
+            System.out.print("Entered: " + username + ". Is this correct (Y/N)? ");
             String input = scanner.nextLine();
             switch (input){
                 case "Y":
@@ -57,7 +57,7 @@ public class codingGame{
 
         // get password (no encryption)
         while (continueLoop){
-            System.out.print("Enter password: ");
+            System.out.print("Enter password (no encryption): ");
             password = scanner.nextLine();
             System.out.print("Entered: " + password + ". Is this correct (Y/N)? ");
             String input = scanner.nextLine();
