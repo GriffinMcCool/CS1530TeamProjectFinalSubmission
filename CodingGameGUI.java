@@ -29,7 +29,7 @@ public class CodingGameGUI extends JFrame {
         cardPanel = new JPanel(cardLayout);
 
         loginPanel = new LoginPanel(e -> login(), e -> createAccount());
-        welcomePanel = new WelcomePanel(e -> logout());
+        welcomePanel = new WelcomePanel(e -> logout(),e->createChallenge());
 
         cardPanel.add(loginPanel, "Login");
         cardPanel.add(welcomePanel, "Welcome");
@@ -69,7 +69,18 @@ public class CodingGameGUI extends JFrame {
             loginPanel.setMessage("Username already exists or invalid.");
         }
     }
-
+    private void createChallenge() {
+        Challenge newChallenge = new Challenge(
+                "Sample Challenge",
+                "Description of the sample challenge",
+                "Objective of the sample challenge",
+                3,
+                "Java"
+        );
+        JPanel challengePanel = newChallenge.createChallengePanel(newChallenge); // Create challenge panel
+        cardPanel.add(challengePanel, "Challenge"); // Add challenge panel to card layout
+        cardLayout.show(cardPanel, "Challenge"); // Show challenge panel
+    }
     // Logs the user out and shows the login panel
     private void logout() {
         setSize(250, 200);
