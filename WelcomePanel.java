@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 public class WelcomePanel extends JPanel {
     private JLabel welcomeLabel; // Label to display the welcome message
 
-    public WelcomePanel(ActionListener logoutAction) {
+    public WelcomePanel(ActionListener logoutAction,ActionListener challenge) {
         setLayout(new FlowLayout());
         welcomeLabel = new JLabel("Welcome, user!");
         add(welcomeLabel);
@@ -14,7 +14,12 @@ public class WelcomePanel extends JPanel {
         JButton logoutButton = new JButton("Logout");
         logoutButton.addActionListener(logoutAction);
         add(logoutButton);
+
+        JButton button=new JButton("create challenge"); 
+        button.addActionListener(challenge);
+        add(button);
     }
+
 
     public void setWelcomeMessage(String username) {
         welcomeLabel.setText("Welcome, " + username + "!");
