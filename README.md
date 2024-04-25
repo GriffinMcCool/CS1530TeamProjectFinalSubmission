@@ -23,4 +23,18 @@ To run the GUI version, follow these steps:
      java CodingGameGUI
      ```
 
+3. **Create Account**
+   - Enter desired username and password into the labeled boxes
+   - Click the "Create Account" button
+  
+4. **Login**
+   - After creating account, enter username and password into the labeled boxes
+   - Click the "Login" button
+  
+5. **Create Challenge**
+   - After logging in, click the "Create Challenge" button
+
+6. **Logout**
+   - After logging in, click the "Logout" button
+
 
