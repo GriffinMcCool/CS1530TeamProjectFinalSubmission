@@ -43,7 +43,7 @@ public class CodingGameGUI extends JFrame {
     }
 
     // Attempts to log the user in using the credentials provided
-    private void login() {
+    public void login() {
         String username = loginPanel.getUsername();
         String password = loginPanel.getPassword();
 
@@ -59,7 +59,7 @@ public class CodingGameGUI extends JFrame {
     }
 
     // Attempts to create a new account with the provided credentials
-    private void createAccount() {
+    public void createAccount() {
         String username = loginPanel.getUsername();
         String password = loginPanel.getPassword();
         
@@ -90,6 +90,14 @@ public class CodingGameGUI extends JFrame {
 
     public static void main(String[] args) {
         new CodingGameGUI();
+    }
+
+    public LoginPanel getLoginPanel(){
+        return this.loginPanel;
+    }
+
+    public AccountManager getAccountManager(){
+        return this.accountManager;
     }
 }
 

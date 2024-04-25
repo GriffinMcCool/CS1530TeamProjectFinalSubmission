@@ -48,4 +48,10 @@ public class AccountManager {
             ex.printStackTrace();
         }
     }
+
+    public void resetAccounts() {
+        properties.clear();
+        accounts.clear();
+        saveAccounts();
+    }
 }

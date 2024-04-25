@@ -43,4 +43,16 @@ public class LoginPanel extends JPanel {
     public void setMessage(String message) {
         messageLabel.setText(message);
     }
+
+    public JLabel getMessage(){
+        return messageLabel;
+    }
+
+    public void setUsername(String username){
+        usernameField = new JTextField(username);
+    }
+
+    public void setPassword(String password){
+        passwordField = new JPasswordField(password);
+    }
 }
