@@ -15,7 +15,7 @@ public class WelcomePanel extends JPanel {
         logoutButton.addActionListener(logoutAction);
         add(logoutButton);
 
-        JButton button=new JButton("create challenge"); 
+        JButton button=new JButton("Create Challenge"); 
         button.addActionListener(challenge);
         add(button);
     }
