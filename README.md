@@ -1,4 +1,4 @@
-# Coding Game (We should give it an actual name)
+# Coding Game (WIP)
 
 ## Requirements
 
